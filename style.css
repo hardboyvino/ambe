@@ -1,0 +1,200 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+    justify-content: center; /* Centers content vertically */
+    min-height: 100vh; /* Makes the body take at least the full viewport height */
+    margin: 0;
+    /* padding: 20px; Optional padding */
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    color: #FE142F;
+}
+
+.container {
+    max-width: 960px; /* Set a maximum width for the content */
+    width: 100%; /* Ensure it takes up the full width of the body */
+}
+
+header {
+    background-color: white;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.logo img {
+    width: 75%;
+    display: block;
+    margin: 20px auto;
+}
+
+.header-and-timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+}
+
+.text-header {
+    text-align: center;
+    margin: 20px 0;
+    display: inline-block;
+}
+
+.text-header h1 {
+    color: black;
+}
+
+.divider {
+    height: 15px; /* Thickness of the line */
+    background-color: red;
+    width: 100%;
+    border-radius: 10px; /* Rounded edges */
+}
+
+.timer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    margin: 40px 0;
+    width: 100%;
+    align-items: center;
+}
+
+.time-unit {
+    background-color: #F8F5EA;
+    padding: 20px;
+    margin: 0 10px;
+    text-align: center;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 150px;
+    margin: 0 5px;
+    font-weight: bolder;
+    /* align-items: center; */
+}
+
+.time-unit span {
+    display: block;
+}
+
+footer {
+    background-color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Responsive styles */
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+
+    header nav ul {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: inline; /* Stack the navigation items vertically */
+        margin-bottom: 5px; /* Add some space between nav items */
+    }
+
+    .logo img {
+        width: 75%; /* Increase the width of the logo */
+        display: block;
+        margin: 10px auto; /* Center the logo with automatic margins */
+    }
+
+    .text-header h1 {
+        font-size: 30px; /* Reduce the font size for the header */
+        /* margin: 10px 0; Adjust margin for smaller screens */
+    }
+
+    .time-unit {
+        padding: 5px; /* Reduce padding inside time units */
+        margin: 15px; /* Adjust margin for time units */
+        min-width: 200px; /* Adjust minimum width for time units */
+        font-size: 28px; /* Reduce font size in time units */
+    }
+
+    .timer {
+        flex-direction: column; /* Stack timer units vertically */
+        align-items: center; /* Center timer units */
+    }
+
+    footer {
+        padding: 10px; /* Adjust footer padding */
+    }
+
+    footer ul li {
+        display: inline; /* Stack footer links vertically */
+        margin: 20px 0; /* Space out footer links */
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    /* Adjust styles for tablets */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    /* Adjust styles for desktops */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    /* Adjust styles for large desktops */
+}
+
+/* Samsung Galaxy Fold (280px x 653px) */
+@media only screen and (min-width: 280px) and (max-height: 653px) {
+    /* Adjust styles specifically for the Galaxy Fold */
+    /* You might need to adjust the layout, font sizes, and more */
+}
